@@ -1,0 +1,33 @@
+{
+    "name": "wmr-autoprefixer",
+    "version": "0.1.0",
+    "description": "wmr plugin to add vendor prefixes to css",
+    "main": "dist/index.js",
+    "repository": "github:RodrigoJuliano/wmr-autoprefixer",
+    "author": "rodrigojuliano",
+    "license": "MIT",
+    "scripts": {
+        "build": "rollup -c rollup.config.js",
+        "prepublishOnly": "yarn build"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^20.0.0",
+        "@rollup/plugin-json": "^4.1.0",
+        "@rollup/plugin-node-resolve": "^13.0.5",
+        "rollup": "^2.57.0",
+        "rollup-plugin-terser": "^7.0.2",
+        "autoprefixer": "^10.3.5",
+        "postcss": "^8.3.7"
+    },
+    "peerDependencies": {
+        "wmr" : "^3.7.1"
+    },
+    "files": [
+        "dist",
+        "src"
+    ],
+    "prettier": {
+        "singleQuote": true,
+        "tabWidth": 4
+    }
+}
